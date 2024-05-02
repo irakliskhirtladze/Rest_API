@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff2f2;
+        }
+
+        main {
+            max-width: 2000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+}
+        h1 {
+            color: #018504;
+        }
+
+        h2 {
+            color: #c94a1b;
+        }
+
+        h3 {
+            color: black;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+            max-width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to Django Rest Framework</h1>
+        <h3>Use below links to view all products and add a new one with Django Rest Framework</h3>
+    </div>
+    <br><br>
+    <div class ="container">
+        <p><a href="{% url 'product_list' %}">All Products </a></p>
+        <p><a href="{% url 'product_create' %}">Add Product</a></p>
+    </div>
+</body>
