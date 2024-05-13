@@ -1,7 +1,5 @@
 from django.shortcuts import render
-from rest_framework import status
 from rest_framework.generics import RetrieveAPIView, CreateAPIView, UpdateAPIView, ListAPIView, DestroyAPIView
-from rest_framework.response import Response
 
 from store.models import Product
 
